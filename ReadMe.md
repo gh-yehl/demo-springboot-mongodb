@@ -1,6 +1,6 @@
 **Springboot + MongoTemplate**  
 1 - application.yml: 
-        Mongdo DB 配置信息
+        Mongdo DB 配置信息  
 2 - MongoDBConfig.java:
         1) 实例化 MongoClient Bean: 通过MongoClientFactoryBean 生成 MongoClient(可以理解为 关系数据库 DataSource对象)
         2) 实例化 MongoTemplate: 将MongoClient 注入 MongoTemplate
@@ -8,7 +8,7 @@
            
 **Springboot + Spring Data Mongo JPA (文档关系映射)**  
 1 - application.yml: 
-        Mongdo DB 配置信息
+        Mongdo DB 配置信息  
 2 - MongoDBConfig:
         1) 实例化 MongoClient Bean: 通过MongoClientFactoryBean 生成 MongoClient(可以理解为 关系数据库 DataSource对象)
         2) 实例化 MongoTemplate: 将MongoClient 注入 MongoTemplate
@@ -31,6 +31,6 @@
     （注意：写在java文件夹下的Application类，是不从属于任何一个包的，因而启动类没有包）
     解决办法
     方法一、将Application建在其他的包下面
-    方法二、在Application类上面加@ComponentScan注解，指定要扫描的包
+    方法二、在Application类上面加@ComponentScan注解，指定要扫描的包  
     
 2 - MongoTemplate.save() 重复则update, 非冲突异常抛出
