@@ -1,10 +1,10 @@
-**Springboot + MongoTemplate**  
-1 - application.yml: 
+#**Springboot + MongoTemplate**  
+##1 - application.yml: 
         Mongdo DB 配置信息  
-2 - MongoDBConfig.java:
-        1) 实例化 MongoClient Bean: 通过MongoClientFactoryBean 生成 MongoClient(可以理解为 关系数据库 DataSource对象)
-        2) 实例化 MongoTemplate: 将MongoClient 注入 MongoTemplate
-           通过MongoTemplate 直接操作 Mongo DB
+##2 - MongoDBConfig.java:
+        ###1) 实例化 MongoClient Bean: 通过MongoClientFactoryBean 生成 MongoClient(可以理解为 关系数据库 DataSource对象)
+        ###2) 实例化 MongoTemplate: 将MongoClient 注入 MongoTemplate
+              通过MongoTemplate 直接操作 Mongo DB
            
 **Springboot + Spring Data Mongo JPA (文档关系映射)**  
 1 - application.yml: 
