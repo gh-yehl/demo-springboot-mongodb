@@ -1,4 +1,4 @@
-Springboot + MongoTemplate
+**Springboot + MongoTemplate**
 1 - application.yml: 
         Mongdo DB 配置信息
 2 - MongoDBConfig.java:
@@ -6,7 +6,7 @@ Springboot + MongoTemplate
         2) 实例化 MongoTemplate: 将MongoClient 注入 MongoTemplate
            通过MongoTemplate 直接操作 Mongo DB
            
-Springboot + Spring Data Mongo JPA (文档关系映射)
+**Springboot + Spring Data Mongo JPA (文档关系映射)**
 1 - application.yml: 
         Mongdo DB 配置信息
 2 - MongoDBConfig:
@@ -17,11 +17,11 @@ Springboot + Spring Data Mongo JPA (文档关系映射)
         4) 构建Repository接口 => 实现 MongoRepository (Spring 自动生成实现)
            通过 Repository接口编程(Service) 去操作Mongo DB
 
-注意: 2种方式实现 
+**注意: 2种方式实现**
     公共的部分为: application.yml, MongoDBConfig.java
     不同的实现: 分别为com.yehl.springdata(Jpa 实现具体使用) 和 com.yehl.template (MongoTemplate 实现具体使用)
 
-Tips
+**Tips**
 1 - 搭建SpringBoot框架时碰到的问题。
     ** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
 
