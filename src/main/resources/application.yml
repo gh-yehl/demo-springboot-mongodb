@@ -5,7 +5,7 @@ spring:
   application: springboot-mongodb
   data:
     mongodb:
-      host: www.curvelife.cn
+      host: www.baidu.com
       database: demodb
       port: 27017
 
