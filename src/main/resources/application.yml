@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  application: springboot-mongodb
+  data:
+    mongodb:
+      host: www.curvelife.cn
+      database: demodb
+      port: 27017
+
